@@ -1,0 +1,18 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:timetracker_app/services/auth_base.dart';
+
+class Auth implements AuthBase {
+  final _firebaseAuth = FirebaseAuth.instance;
+
+  @override
+  User? get currentUser => _firebaseAuth.currentUser;
+
+  @override
+  Future<User?> signInAnonymously() async {
+    final userCredentials = await _firebaseAuth.signInAnonymously();
+    return userCredentials.user;
+  }
+
+  @override
+  Future<void> signOut() async => await _firebaseAuth.signOut();
+}

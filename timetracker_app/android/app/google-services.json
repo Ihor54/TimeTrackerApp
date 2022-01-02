@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "96782372243",
+    "project_id": "time-tracker-app-4a2ab",
+    "storage_bucket": "time-tracker-app-4a2ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96782372243:android:d342ba7c570fb4f466ec66",
+        "android_client_info": {
+          "package_name": "com.example.timetracker_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96782372243-jdp7almvf2h4ui341gvpkrtf9u9adf7p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.timetracker_app",
+            "certificate_hash": "6fabbbb4bc1d331cf4b32da8379d9382587e376c"
+          }
+        },
+        {
+          "client_id": "96782372243-l1alj6hmeeu6aa1j2fnahblocsn2v8n7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZaysDZR0bV5GSDT2zD7E6lk8c5yFFOVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "96782372243-l1alj6hmeeu6aa1j2fnahblocsn2v8n7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
