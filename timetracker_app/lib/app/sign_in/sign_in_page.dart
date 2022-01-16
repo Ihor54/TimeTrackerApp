@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:timetracker_app/app/sing_in/email_sign_in_page.dart';
-import 'package:timetracker_app/app/sing_in/sign_in_btn.dart';
-import 'package:timetracker_app/app/sing_in/social_sign_in_btn.dart';
+import 'package:timetracker_app/app/sign_in/email_sign_in_page.dart';
 import 'package:timetracker_app/services/auth_base.dart';
+
+import 'sign_in_btn.dart';
+import 'social_sign_in_btn.dart';
 
 class SignInPage extends StatelessWidget {
   const SignInPage({Key? key, required this.auth}) : super(key: key);

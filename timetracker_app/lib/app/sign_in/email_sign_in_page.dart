@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:timetracker_app/app/sing_in/email_sing_in_form.dart';
 import 'package:timetracker_app/services/auth_base.dart';
+
+import 'email_sing_in_form.dart';
 
 class EmailSignInPage extends StatelessWidget {
   const EmailSignInPage({Key? key, required this.auth}) : super(key: key);
