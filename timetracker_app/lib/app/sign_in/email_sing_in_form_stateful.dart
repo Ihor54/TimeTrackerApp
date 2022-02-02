@@ -1,21 +1,22 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:timetracker_app/app/sign_in/email_sign_in_model.dart';
 import 'package:timetracker_app/app/sign_in/validators.dart';
 import 'package:timetracker_app/common_widgets/form_submit_btn.dart';
 import 'package:timetracker_app/common_widgets/show_exception_alert_dialog.dart';
 import 'package:timetracker_app/services/auth_base.dart';
 
-enum EmailSignInFormType { signIn, register }
-
-class EmailSignInForm extends StatefulWidget with EmailAndPasswordValidators {
-  EmailSignInForm({Key? key}) : super(key: key);
+class EmailSignInFormStateful extends StatefulWidget
+    with EmailAndPasswordValidators {
+  EmailSignInFormStateful({Key? key}) : super(key: key);
 
   @override
-  State<EmailSignInForm> createState() => _EmailSignInFormState();
+  State<EmailSignInFormStateful> createState() =>
+      _EmailSignInFormStatefulState();
 }
 
-class _EmailSignInFormState extends State<EmailSignInForm> {
+class _EmailSignInFormStatefulState extends State<EmailSignInFormStateful> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
   final _emailFocusNode = FocusNode();
@@ -36,7 +37,7 @@ class _EmailSignInFormState extends State<EmailSignInForm> {
     super.dispose();
   }
 
-  void _submit() async {
+  Future<void> _submit() async {
     setState(() {
       _submitted = true;
       _isLoading = true;
