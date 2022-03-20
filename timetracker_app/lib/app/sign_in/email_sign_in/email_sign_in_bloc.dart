@@ -1,8 +1,6 @@
 import 'dart:async';
-import 'dart:math';
 
-import 'package:timetracker_app/app/sign_in/email_sign_in_model.dart';
-import 'package:timetracker_app/app/sign_in/validators.dart';
+import 'package:timetracker_app/app/sign_in/email_sign_in/email_sign_in_model.dart';
 import 'package:timetracker_app/services/auth_base.dart';
 
 class EmailSignInBloc {
